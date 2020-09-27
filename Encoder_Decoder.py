@@ -131,5 +131,4 @@ class Seq2Seq(nn.Module):
 
             # techer_force = 1 = True이면 trg[t]를 아니면 top1을 input으로 사용
             input = trg[t] if teacher_force else top1
-
         return outputs
